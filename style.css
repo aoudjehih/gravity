@@ -28,8 +28,8 @@ body {
 
 .gravity {
     max-width: 1360px;
-    min-height: 2000px;
     margin: 0 auto;
+    background-color: #f9f9f9;
 }
 
 .hero__nav {
@@ -111,6 +111,55 @@ body {
     background: center / cover url("img/video.png");
     height: 80%;
     width:80%;
+}
+
+.about {
+    margin-top: 137px;
+}
+
+.about__container {
+    display: flex;
+}
+
+
+.about__container_left {
+    margin: 0 auto;
+}
+
+.about__container__text {
+    width: 50%;
+    padding-top: 37px;
+}
+
+.about__container__text__wrapper {
+    width: 540px;
+}
+
+.about__container__text h1 {
+    font-size: 2.3rem;
+}
+
+.about__container__text p {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.about__user__container {
+    padding-top: 61px;
+    display: flex;
+    width:235px;
+    justify-content: space-between;
+}
+
+.about__user__container__description_title {
+    font-size: 1rem;
+}
+
+.about__user__container__description_detail {
+    font-size: .88rem;
 }
 
 @media screen and (min-width: 1100px) {
