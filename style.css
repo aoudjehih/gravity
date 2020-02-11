@@ -7,6 +7,7 @@
     url('fonts/fira-sans-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('fonts/fira-sans-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* fira-sans-900 - latin */
 @font-face {
     font-family: 'Fira Sans';
@@ -29,7 +30,6 @@ body {
 .gravity {
     max-width: 1360px;
     margin: 0 auto;
-    background-color: #f9f9f9;
 }
 
 .hero__nav {
@@ -42,6 +42,10 @@ body {
     margin: 59px 125px;
 }
 
+.hero__container {
+    width: 100%;
+    margin-left: auto;
+}
 
 .hero__container {
     display: flex;
@@ -49,7 +53,7 @@ body {
 }
 
 .hero__container__placeholder {
-    width: 49.5%;
+    width: 100%;
     position: relative;
 }
 .hero__container__placeholder img{
@@ -57,16 +61,16 @@ body {
 }
 
 .hero__container__left {
-    width: 50.5%;
+    width: 100%;
 }
 
 .hero__container__text {
-    margin: 67px auto 0 auto;
-    padding-left: 19px;
-    width: 69%;
+    margin: 67px auto 0 0;
+    width: 90%;
     height: 251px;
     font-family: "Fira Sans";
     position: relative;
+    padding-left: 126px;
 }
 
 .hero__container__text h1 {
@@ -78,6 +82,7 @@ body {
     font-size: 0.85em;
     line-height: 25px;
     margin-bottom: 56px;
+    width: 90%;
 }
 
 .btn {
@@ -114,6 +119,8 @@ body {
 }
 
 .about {
+    width: calc(100% - 126px*2);
+    margin: 0 auto;
     margin-top: 137px;
 }
 
@@ -121,18 +128,19 @@ body {
     display: flex;
 }
 
-
 .about__container_left {
-    margin: 0 auto;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.about__container_left__img {
+    background: no-repeat left url('img/placeholder-2.png');
+    min-height: 564px;
 }
 
 .about__container__text {
-    width: 50%;
     padding-top: 37px;
-}
-
-.about__container__text__wrapper {
-    width: 540px;
+    width: 100%;
 }
 
 .about__container__text h1 {
@@ -162,10 +170,377 @@ body {
     font-size: .88rem;
 }
 
+.services {
+    margin-top: 142px;
+    width: calc(100% - 126px);
+    margin-left: auto;
+    height: auto;
+}
+
+.services__title {
+    margin-bottom: 45px;
+}
+
+.services__top__container {
+    display: flex;
+    margin-bottom: 98px;
+}
+
+.services__top__container_left {
+    width:100%;
+}
+
+.services__top__container__right {
+    width:100%;
+}
+
+.services__top__container__right ul {
+    display: flex;
+    width:80%;
+    height: 173px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.services__top__container__right li {
+    font-family: Fira Sans;
+    list-style: none;
+    line-height: 2.7rem;
+    font-size: 1.2rem;
+    opacity: .5;
+}
+
+.services__top__container_left h1 {
+    width: 90%;
+    font-size: 2.1rem;
+    text-align: justify;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.services__bottom__container {
+    display: flex;
+    width: 100%;
+    height: 495px;
+    position: relative;
+}
+
+.placeholder__3 {
+    width: 67%;
+    background: no-repeat right / cover url('img/placeholder-3.png');
+    margin-right: 30px;
+}
+
+.placeholder__4 {
+    width: 33%;
+    background: no-repeat url('img/placeholder-4.png');
+}
+
+.services__bottom__container img:first-child {
+    margin-right: 20px;
+}
+
+.player {
+    position: absolute;
+    right: 65%;
+    top: 43%;
+    background: center / cover url("img/play_button_primary.png");
+    width: 65px;
+    height: 64.32px;
+}
+
+.navigation {
+    margin-top: 49.48px;
+    width: 125px;
+    height: 49.48px;
+    background: center / cover url("img/navigation.png");
+    margin-bottom: 181px;
+}
+
+.features {
+    width:calc(100% - 25px);
+}
+
+.features___container {
+    display: flex;
+}
+
+.feature__container__left {
+    width: 50%;
+    position: relative;
+}
+
+.ashlay img{
+    height: 100%;
+    width:92%;
+}
+
+.placeholder__5 img {
+    width:115%;
+}
+
+.placeholder__5 {
+    position: absolute;
+    left: 28%;
+    top: 0;
+    width:100%;
+}
+
+.feature__container__right {
+    width: 50%;
+}
+
+.feature__container__right__text {
+    margin-top: 38px;
+    width: 80% ;
+    margin-left: auto;
+}
+
+.feature__container__right__text__title {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1px;
+}
+
+.feature__container__right_icon {
+    margin-top: 30px;
+    display: flex;
+}
+
+.mt62{
+    margin-top: 62px;
+}
+
+.feature__container__right_icon_title {
+    padding: 15px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.feature__container__right__text__description {
+    margin-top: 22px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.5;
+}
+
+.works {
+    margin: 202px auto 40px auto;
+    width: 90%;
+}
+
+.works__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.works__nav__left h1 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1px;
+}
+
+.works__nav__right a {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 24px;
+    opacity: .5;
+}
+
+.works__nav__right a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.works__main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 74.8px;
+    position: relative;
+    width: 100%;
+}
+
+.works__main__img {
+    width: 31.52%;
+}
+
+.works__main__img:nth-child(-n + 2),
+.works__main__img:nth-child(4),
+.works__main__img:nth-child(5){
+    margin: 0 2.7% 2.4% 0;
+}
+
+.works__main__img:nth-child(3) {
+    position: absolute;
+    right: 0;
+    top: -2.3%;
+}
+
+.works__main__img:nth-child(n + 4) {
+    margin-bottom: 0;
+    margin-bottom: 0;
+}
+
+.works__main__img img{
+    width: 100%;
+}
+
+.works__main__img .player {
+    right: 43%;
+    top: 43%;
+}
+
+.works__footer {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.works__footer__left {
+    width: 66.66%;
+}
+
+.works__footer__left {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.5;
+    margin: 0;
+}
+
+.testimonials {
+    margin: 248px auto 257px auto;
+    width: 90%;
+    display: flex;
+}
+
+.testimonials__container__left {
+    width: 59.91%;
+    position: relative;
+}
+
+.testimonials__container__right {
+    width: 40.09%;
+}
+
+.testimonials__container__right img {
+    width: 100%;
+}
+
+.ss {
+    width:100%;
+}
+.testimonials__title {
+    margin-bottom: 73px;
+}
+
+.testimonials__text {
+    font-family: Fira Sans;
+    line-height: 50px;
+    letter-spacing: -1px;
+    margin-bottom: 121px;
+}
+
+.testimonials__text p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    width: 90%;
+}
+
+.testimonials__text__author {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.testimonials__text__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: .5;
+}
+
+.testimonials__text__navigation {
+    position: absolute;
+    bottom: -15px;
+}
+
+.clients {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.client__container {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+}
+
+.clients__container__left {
+    width: 50%;
+}
+
+.clients__container__right {
+    width: 50%;
+}
+
+.clients__container__right p {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: .5;
+}
+
+.clients__partners {
+    margin-top: 82px;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+    .features {
+        width:calc(100% - 125px);
+    }
+
+    .testimonials__text p {
+        font-size: 40px;
+    }
+}
+
 @media screen and (min-width: 1100px) {
     .hero__container__text h1 {
         font-size: 3.5rem;
-        min-width: 490px;
     }
 
     .hero__container__text p {
@@ -175,4 +550,8 @@ body {
     .bg {
         margin-top: 189px;
     }
+
+    .works, .testimonials, .clients{
+         width: 81.5%;
+     }
 }
